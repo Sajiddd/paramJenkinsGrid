@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>akshara</groupId>
+  <artifactId>param_jenkins</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+   <plugins>
+     <plugin>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-compiler-plugin</artifactId>
+	    <version>3.7.0</version>
+	    <configuration>
+	        <source>1.8</source>
+	        <target>1.8</target>
+	        <verbose>true</verbose>
+	    </configuration>
+	</plugin>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <systemPropertyVariables>
+          <city>Bangalore</city>
+            <gridURL>http://localhost:4444</gridURL>
+			<appURL>http://demo.actitime.com</appURL>
+          </systemPropertyVariables>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+   </plugins>
+  </build>
+  <dependencies>
+  <dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.20</version>
+</dependency>
+    <dependency>
+  		<groupId>org.testng</groupId>
+  		<artifactId>testng</artifactId>
+  		<version>6.14.3</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.seleniumhq.selenium</groupId>
+  		<artifactId>selenium-java</artifactId>
+  		<version>4.10.0</version>
+  	</dependency>
+  	 <dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>LATEST</version>
+</dependency>
+  </dependencies>
+</project>
