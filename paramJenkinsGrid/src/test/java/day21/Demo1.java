@@ -13,7 +13,7 @@ public class Demo1 {
 	/*
 	 * sending the gridUrl and appUrl as parameters from jenkins to test method.
 	 */
-	@Parameters({"gridURL","appURL"})
+	@Parameters({"gridURL"})
 	@Test
 	public void testA(String gridURL,String appURL) throws InterruptedException, MalformedURLException
 	{
@@ -25,7 +25,7 @@ public class Demo1 {
 		ChromeOptions options=new ChromeOptions();
 		//using remoteWebdriver class to run the script in RemoteSystem Selenium grid.
 		WebDriver driver = new RemoteWebDriver(url,options);
-		driver.get(appURL);
+		driver.get("http://demo.actitime.com");
 		driver.findElement(By.id("username")).sendKeys("admin");
 		driver.findElement(By.name("pwd")).sendKeys("manager");
 		driver.findElement(By.xpath("//div[text()='Login ']")).click();
