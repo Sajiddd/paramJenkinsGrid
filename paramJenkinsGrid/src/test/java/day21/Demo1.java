@@ -29,8 +29,10 @@ public class Demo1 {
 		driver.findElement(By.id("username")).sendKeys("admin");
 		driver.findElement(By.name("pwd")).sendKeys("manager");
 		driver.findElement(By.xpath("//div[text()='Login ']")).click();
+		System.out.println(driver.getTitle());
 		Thread.sleep(7000);
 		driver.findElement(By.id("logoutLink")).click();
+		driver.getTitle();
 		driver.quit();
 	}
 }
