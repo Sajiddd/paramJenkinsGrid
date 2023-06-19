@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class Demo1 {
 	/*
-	 * sending the gridUrl and appUrl as parameters from jenkins to test method.
+	 * sending the gridUrl as parameters from jenkins to test method.
 	 */
 	@Parameters({"gridURL"})
 	@Test
