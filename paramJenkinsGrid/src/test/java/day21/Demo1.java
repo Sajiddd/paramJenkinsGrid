@@ -15,7 +15,7 @@ public class Demo1 {
 	 */
 	@Parameters({"gridURL"})
 	@Test
-	public void testA(String gridURL,String appURL) throws InterruptedException, MalformedURLException
+	public void testA(String gridURL) throws InterruptedException, MalformedURLException
 	{
 		Reporter.log("test testA method of demo2 class",true);
 
