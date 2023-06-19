@@ -3,7 +3,6 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <parameter name="gridURL" value="${gridURL}"/>
-    <parameter name="appURL" value="${appURL}"/>
     <classes>
       <class name="day21.Demo1"/>
     </classes>
