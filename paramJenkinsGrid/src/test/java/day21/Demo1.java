@@ -32,7 +32,7 @@ public class Demo1 {
 		System.out.println(driver.getTitle());
 		Thread.sleep(7000);
 		driver.findElement(By.id("logoutLink")).click();
-		driver.getTitle();
+		System.out.println(driver.getTitle());
 		driver.quit();
 	}
 }
