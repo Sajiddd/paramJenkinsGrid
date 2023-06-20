@@ -31,8 +31,9 @@ public class Demo1 {
 		driver.findElement(By.xpath("//div[text()='Login ']")).click();
 		System.out.println(driver.getTitle());
 		Thread.sleep(7000);
-		driver.findElement(By.id("logoutLink")).click();
 		System.out.println(driver.getTitle());
+		driver.findElement(By.id("logoutLink")).click();
+		
 		driver.quit();
 	}
 }
