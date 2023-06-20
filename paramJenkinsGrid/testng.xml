@@ -5,7 +5,7 @@
   <parameter name="gridURL" value="${gridURL}"/>
   <parameter name="appURL" value="${appURL}"/>
     <classes>
-      <class name="day21.Demo1"/>
+      <class name="day21.Demo2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
