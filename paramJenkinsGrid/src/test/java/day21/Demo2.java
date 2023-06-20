@@ -24,7 +24,7 @@ public class Demo2 {
 	public void testA(String gridURL,String appURL) throws InterruptedException, MalformedURLException
 	{
 		ExtentReports report=new ExtentReports();
-		ExtentSparkReporter spark=new ExtentSparkReporter("target/Spark.html");
+		ExtentSparkReporter spark=new ExtentSparkReporter("report/Spark.html");
 		report.attachReporter(spark);
 		ExtentTest test = report.createTest("Demo2");
 		
